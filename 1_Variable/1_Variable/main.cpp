@@ -71,9 +71,9 @@ int main()
 	//== : 같으면 true, 아니면 false
 	//!= : 같으면 false, 아니면 true
 	// > : 왼쪽이 오른쪽보다 크면 true, 아니면 false
-	// >= : 왼쪽이 오른쪽보다 크거나 같으면 true, 아니면 false
+	// >= :왼쪽이 오른쪽보다 크거나 같으면 true, 아니면 false
 	// < : 왼쪽이 오른쪽보다 작으면 true, 아니면 false
-	// <= : 왼쪽이 오른쪽보다 작거나 같으면 true, 아니면 false
+	// <= :왼쪽이 오른쪽보다 작거나 같으면 true, 아니면 false
 
 	bResult = (10 == 11);
 	bResult = (10 != 11);
@@ -85,13 +85,17 @@ int main()
 	//문제 : 아래 초 값의 분과 시간 값을 구하시오.
 	unsigned int sec = 987654321;//초
 
-	unsigned int hour = 0, min = 0, sec = 0;
+	unsigned int day = 0, hour = 0,	min = 0;
 	
-	min = divide = sec / 60;
-	// min = 0;
-	// sec = 0;*/
+	min = sec / 60;
+	sec = sec % 60;
+	
+	hour = min / 60;
+	min = min % 60;
 
+	day = hour / 24;
+	hour = hour % 24;
 
-	printf("%d",i2);
+	printf("%d %d %d %d",day,hour,min,sec);
 	system("pause");
 }
