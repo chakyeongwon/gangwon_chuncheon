@@ -3,6 +3,15 @@
 
 #include <iostream>
 #include <stdio.h>
+#include<bitset>
+
+#define LEVEL1_REWARD_10 0b00000001;
+#define LEVEL1_REWARD_20 0b00000010;
+#define LEVEL1_REWARD_30 0b00000100;
+#define LEVEL1_REWARD_40 0b00001000;
+#define LEVEL1_REWARD_50 0b00010000;
+#define LEVEL1_REWARD_60 0b00100000;
+
 
 
 int main()
@@ -125,7 +134,7 @@ int main()
     /*int light = 0;
         scanf_s("%d", &light);
 
-        if (light == 0)
+        if (light == false)
 
         {
             printf("빨강");
@@ -141,15 +150,13 @@ int main()
   /*  int ninput = 0;
    scanf_s("%d", &ninput);
 
-   
    if (ninput >= 100)
    {
        printf("100보다 크거나 같다");
    }
 
    else
-
-   {
+      {
        printf("100보다 작다");
    }*/
 
@@ -194,7 +201,7 @@ int main()
 
     default:
         printf("잘못 입력하셨습니다");
-            break;
+        break;
     }*/
 
 
@@ -219,16 +226,61 @@ int main()
     
     default:
         printf("잘못 입력하셨습니다");
-            break;
+        break;
     }*/
 
 
+    /*int A = 0b01011101;
+    int B = 0123;
+    int C = 0xFF;
+    printf("2진법(0b01011101) : %d\n", A);
+    printf("8진법(0123) : %d\n", B);
+    printf("16진법(0xFF) : %d\n", C);*/
 
 
+//char bitNum = 0b01001010;
+//char bitResult = 0;
+//
+//
+//bitResult = bitNum & 0b11010100;
+//std::cout << std::bitset<8>(bitResult) << std::endl;
+//
+//bitResult = bitNum | 0b11010100;
+//std::cout << std::bitset<8>(bitResult) << std::endl;
+//
+//bitResult = bitNum ^ 0b11010100;
+//std::cout << std::bitset<8>(bitResult) << std::endl;
+//
+//bitResult = ~ 0b11010100;
+//std::cout << std::bitset<8>(bitResult) << std::endl;
+//
+//
+////10레벨 달성보상
+//bool isGetLevel10Reward = false;
+////20레벨 달성보상
+//bool isGetLevel20Reward = false;
+////30레벨 달성보상
+//bool isGetLevel30Reward = false;
+////40레벨 달성보상
+//bool isGetLevel40Reward = false;
+////50레벨 달성보상
+//bool isGetLevel50Reward = false;
+////60레벨 달성보상
+//bool isGetLevel60Reward = false;
 
 
+    char MyReward = 0b00111101;
+
+    MyReward = MyReward | LEVEL1_REWARD_20;
+    std::cout << "MyReward ="<<std::bitset<8>(MyReward) << std::endl;
 
 
+    bool isEnable = false;
+    isEnable = MyReward & LEVEL1_REWARD_20;
+    std::cout << "MyReward Check =" << isEnable << std::endl;
+
+    MyReward = MyReward & ~LEVEL1_REWARD_20;
+    std::cout << "MyReward reset=" << std::bitset<8>(MyReward) << std::endl;
 
 
 
