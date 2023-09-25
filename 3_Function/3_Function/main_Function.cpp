@@ -60,51 +60,51 @@ unsigned int CalculatorSum(int x, int y)
 
 
 //Factorial ÇÔ¼ö
-int Factorial(int x)
-{
-	int FacResult = 1;
-	for (int i = x;i > 0; --i)
-	{
-		FacResult*= i;
-	}
-	return FacResult;
-}
-
-int Factorial2(int x)
-{
-	int FacResult = 1;
-	for (int i = x; i < 5; ++i)
-	{
-		FacResult *= i;
-	}
-	return FacResult;
-}
-
-
-
-int ReFactorial(int x)
-{
-	if (x == 1)
-	{
-		return 1;
-	}
-	return x * ReFactorial(x - 1);
-}
-
-
-int SumTon(int x)
-{
-	return x * (x + 1) / 2;
-}
-
-int SumTon2(int x)
-{
-	int eResult = x;
-	for (int i = eResult; i > 0; --i)
-	{
-		eResult *= i;
-	}
-	return eResult;
+//int Factorial(int x)
+//{
+//	int FacResult = 1;
+//	for (int i = x;i > 0; --i)
+//	{
+//		FacResult*= i;
+//	}
+//	return FacResult;
+//}
+//
+//int Factorial2(int x)
+//{
+//	int FacResult = 1;
+//	for (int i = 1; i <= x; ++i)
+//	{
+//		FacResult *= i;
+//	}
+//	return FacResult;
+//}
+//
+//
+//
+//int ReFactorial(int x)
+//{
+//	if (x == 1)
+//	{
+//		return 1;
+//	}
+//	return x * ReFactorial(x - 1);
+//}
+//
+//
+//int SumTon(int x)
+//{
+//	return x * (x + 1) / 2;
+//}
+//
+//int SumTon2(int x)
+//{
+//	int eResult = x;
+//	for (int i = eResult; i > 0; --i)
+//	{
+//		eResult *= i;
+//	}
+//	return eResult;
 }
 	
 
@@ -167,8 +167,7 @@ int main()
 	for (int d=1; d < 20; d*=3)
 	{
 		printf("%d Hello\n", d);
-	}
-*/
+	}*/
 
 	/*int FacResult = 1;
 	for (int i = 1; i < 5; ++i)
@@ -203,14 +202,14 @@ int main()
 
 
 
-	//int aResult = 1;
-	//int i = 1;
-	//while (i <= 10)
-	//{
-	//	aResult *= i;
-	//	i++;
-	//}
-	//printf("while Factorial=%d", aResult);
+	int aResult = 1;
+	int i = 1;
+	while (i <= 10)
+	{
+		aResult *= i;
+		i++;
+	}
+	printf("while Factorial=%d", aResult);
 
 
 
