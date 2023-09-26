@@ -16,21 +16,21 @@
 
 int main()
 {
-    {
-        //int a = 0;
-        //std::cin >> a;
-        //std::cout << a << "를 입력하셨습니다.";
-    }
+   /* {
+        int a = 0;
+        std::cin >> a;
+        std::cout << a << "를 입력하셨습니다.";
+    }*/
 
-    {
-        /*int a = 0, b = 0;
-        scanf_s("%d %d", &a, &b);
-        printf("a더하기 b는? %d", a+b);*/
+    //{
+    //    /*int a = 0, b = 0;
+    //    scanf_s("%d %d", &a, &b);
+    //    printf("a더하기 b는? %d", a+b);*/
 
-    }
+    //}
 
 
-    /*bool bResult = false;
+    bool bresult = false;
 
     if (3>=4)
 
@@ -42,7 +42,7 @@ int main()
 
     {
         printf("거짓이다");
-    }*/
+    }
 
 
     //int Score = 0;
@@ -269,7 +269,7 @@ int main()
 //bool isGetLevel60Reward = false;
 
 
-    char MyReward = 0b00111101;
+   /* char MyReward = 0b00111101;
 
     MyReward = MyReward | LEVEL1_REWARD_20;
     std::cout << "MyReward ="<<std::bitset<8>(MyReward) << std::endl;
@@ -280,7 +280,7 @@ int main()
     std::cout << "MyReward Check =" << isEnable << std::endl;
 
     MyReward = MyReward & ~LEVEL1_REWARD_20;
-    std::cout << "MyReward reset=" << std::bitset<8>(MyReward) << std::endl;
+    std::cout << "MyReward reset=" << std::bitset<8>(MyReward) << std::endl;*/
 
 
 

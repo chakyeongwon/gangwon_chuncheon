@@ -17,7 +17,7 @@ int MultiplyNum(int a, int b)
 	return a * b;
 }
 
-float DivideNum(int a, int b)
+float DivideNum(float a, float b)
 {
 	return a / b;
 }

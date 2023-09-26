@@ -13,6 +13,6 @@ float MinusNum(int a, int b);
 
 int MultiplyNum(int a, int b);
 
-float DivideNum(int a, int b);
+float DivideNum(float a, float b);
 
 int RemainNum(int a, int b);

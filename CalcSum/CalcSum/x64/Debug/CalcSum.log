@@ -1,5 +1,2 @@
-﻿  main.cpp
-D:\works\gangwon_chuncheon\CalcSum\CalcSum\main.cpp(10,11): warning C4244: 'return': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\works\gangwon_chuncheon\CalcSum\CalcSum\main.cpp(67,27): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\works\gangwon_chuncheon\CalcSum\CalcSum\main.cpp(67,21): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  CalcSum.vcxproj -> D:\works\gangwon_chuncheon\CalcSum\x64\Debug\CalcSum.exe
+﻿  calcFunc.cpp
+D:\works\gangwon_chuncheon\CalcSum\calcFunc.cpp(12,11): warning C4244: 'return': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
