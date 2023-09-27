@@ -7,57 +7,83 @@
 //}
 
 
-//enum ePhoneType
-//{
-//	iPhone,
-//	Galaxy23,
-//	GalaxyFold,
-//	GalaxyZ
-//};
+enum ePhoneType
+{
+	iPhone,
+	Galaxy23,
+	GalaxyFold,
+	GalaxyZ
+};
 
-//struct stPhoneShop
-//{
-//	int iPhoneCnt;
-//	int Galaxy23;
-//	int GalaxyFold;
-//	int GalaxyZ;
-//
-//	void printPhoneCnt()
-//	{
-//		printf("iPhone=%d, Galaxy23=%d, GalaxyFold=%d, GalaxyZ=%d\n", iPhoneCnt, Galaxy23, GalaxyFold, GalaxyZ);
-//	}
-//
-//};
+struct stPhoneShop
+{
+	int iPhoneCnt;
+	int Galaxy23;
+	int GalaxyFold;
+	int GalaxyZ;
 
-//void BuyiPhone(stPhoneShop* pPS)
-//{
-//	pPS->iPhoneCnt--;//포인트로 참조하는 구조체의 변수는 '->'키워드로 참조한다.
-//	pPS->Galaxy23--;
-//	pPS->GalaxyFold--;
-//	pPS->GalaxyZ--;
-//}
+	void printPhoneCnt()
+	{
+		printf("iPhone=%d, Galaxy23=%d, GalaxyFold=%d, GalaxyZ=%d\n", iPhoneCnt, Galaxy23, GalaxyFold, GalaxyZ);
+	}
+
+};
+
+void BuyiPhone(stPhoneShop* pPS)
+{
+	pPS->iPhoneCnt--;//포인트로 참조하는 구조체의 변수는 '->'키워드로 참조한다.
+	pPS->Galaxy23--;
+	pPS->GalaxyFold--;
+	pPS->GalaxyZ--;
+}
 
 
-//void BuyPhone(ePhoneType phoneType, stPhoneShop* pPS)
-//{
-//	switch (phoneType)
-//	{
-//	case ePhoneType::iPhone:
-//		pPS->iPhoneCnt--;
-//		break;
-//	case ePhoneType::Galaxy23:
-//		pPS->Galaxy23--;
-//		break;
-//	case ePhoneType::GalaxyFold:
-//		pPS->GalaxyFold--;
-//		break;
-//	case ePhoneType::GalaxyZ:
-//		pPS->GalaxyZ--;
-//		break;
-//	default:
-//		break;
-//	}
-//}
+void BuyPhone(ePhoneType phoneType, stPhoneShop* pPS)
+{
+	switch (phoneType)
+	{
+	case ePhoneType::iPhone:
+		pPS->iPhoneCnt--;
+		break;
+	case ePhoneType::Galaxy23:
+		pPS->Galaxy23--;
+		break;
+	case ePhoneType::GalaxyFold:
+		pPS->GalaxyFold--;
+		break;
+	case ePhoneType::GalaxyZ:
+		pPS->GalaxyZ--;
+		break;
+	default:
+		break;
+	}
+}
+
+
+void printNumber(const int* number)
+{
+	//number = nullptr;
+	//*number = 2;
+	printf("print number=%d\n", *number);
+}
+
+void printNumber2(const int& number)
+{
+	//number = nullptr;
+	//number = 2;
+	printf("print number=%d\n", number);
+}
+
+
+void printPhoneShop(const stPhoneShop* ps)
+{
+	printf("print iPhoneCnt=%d\n", ps->iPhoneCnt);
+}
+
+void printPhoneShop(const stPhoneShop& ps)
+{
+	printf("print iPhoneCnt=%d\n", ps.iPhoneCnt);
+}
 
 
 int main()
@@ -183,7 +209,8 @@ int main()
 
 	}
 
-
-
+	int value = 0;
+	printNumber(&value);
+	printNumber2(value);
 
 }
