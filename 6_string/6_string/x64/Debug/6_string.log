@@ -1,0 +1,11 @@
+﻿  main.cpp
+D:\works\gangwon_chuncheon\6_string\6_string\main.cpp(27,8): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\works\gangwon_chuncheon\6_string\6_string\main.cpp(28,8): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\works\gangwon_chuncheon\6_string\6_string\main.cpp(44,9): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\works\gangwon_chuncheon\6_string\6_string\main.cpp(45,9): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\works\gangwon_chuncheon\6_string\6_string\main.cpp(65,9): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\works\gangwon_chuncheon\6_string\6_string\main.cpp(66,9): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\works\gangwon_chuncheon\6_string\6_string\main.cpp(100,11): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\works\gangwon_chuncheon\6_string\6_string\main.cpp(108,15): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\works\gangwon_chuncheon\6_string\6_string\main.cpp(76): warning C4715: 'StringCmp2': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  6_string.vcxproj -> D:\works\gangwon_chuncheon\6_string\x64\Debug\6_string.exe
