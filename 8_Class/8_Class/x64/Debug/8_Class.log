@@ -1,0 +1,11 @@
+﻿  class.cpp
+D:\works\gangwon_chuncheon\8_Class\8_Class\class.cpp(93,38): warning C4311: '<function-style-cast>': 'stMystruct **'에서 'int'(으)로 포인터가 잘립니다.
+D:\works\gangwon_chuncheon\8_Class\8_Class\class.cpp(93,38): warning C4302: '<function-style-cast>': 'stMystruct **'에서 'int'(으)로 잘립니다.
+D:\works\gangwon_chuncheon\8_Class\8_Class\class.cpp(93,53): warning C4311: '<function-style-cast>': 'stMystruct *'에서 'int'(으)로 포인터가 잘립니다.
+D:\works\gangwon_chuncheon\8_Class\8_Class\class.cpp(93,53): warning C4302: '<function-style-cast>': 'stMystruct *'에서 'int'(으)로 잘립니다.
+D:\works\gangwon_chuncheon\8_Class\8_Class\class.cpp(99,40): warning C4311: '<function-style-cast>': 'stMystruct *'에서 'int'(으)로 포인터가 잘립니다.
+D:\works\gangwon_chuncheon\8_Class\8_Class\class.cpp(99,40): warning C4302: '<function-style-cast>': 'stMystruct *'에서 'int'(으)로 잘립니다.
+D:\works\gangwon_chuncheon\8_Class\8_Class\class.cpp(99,57): warning C4311: '<function-style-cast>': 'stMystruct *'에서 'int'(으)로 포인터가 잘립니다.
+D:\works\gangwon_chuncheon\8_Class\8_Class\class.cpp(99,57): warning C4302: '<function-style-cast>': 'stMystruct *'에서 'int'(으)로 잘립니다.
+D:\works\gangwon_chuncheon\8_Class\8_Class\class.cpp(68): warning C4172: 지역 변수 또는 임시의 주소를 반환하고 있습니다.
+  8_Class.vcxproj -> D:\works\gangwon_chuncheon\8_Class\x64\Debug\8_Class.exe

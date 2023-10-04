@@ -65,7 +65,7 @@ int main()
 
 	wchar_t szWCharInput[20] = L"";
 	wscanf_s(L"%ls", szWCharInput, (unsigned)_countof(szWCharInput));
-	wprintf(L"szWCharInput=%s", szWCharInput);
+	wprintf(L"szWCharInput=%s\n", szWCharInput);
 
 
 
@@ -82,7 +82,7 @@ int main()
 			DSum += 1;
 	}
 	
-	printf("문자 a 개수=%d\n", DSum);
+	printf("문자 a,b 개수=%d\n", DSum);
 	printf("sizeof=%d Byte\n", (unsigned)sizeof(szWCharInput));
 	printf("_countof=%d 배열수\n", (unsigned)_countof(szWCharInput));
 
