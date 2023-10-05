@@ -8,6 +8,9 @@ int main()
 	_wsetlocale(LC_ALL, L"Korean");
 
 
+
+
+
 	//2의 배수 출력하기(0-100)
 	
 	/*for (int i = 1; i < 102; ++i)
@@ -63,16 +66,16 @@ int main()
 
 	//wchar_t 형으로 문자 입력 받기
 
-	wchar_t szWCharInput[20] = L"";
+	/*wchar_t szWCharInput[20] = L"";
 	wscanf_s(L"%ls", szWCharInput, (unsigned)_countof(szWCharInput));
-	wprintf(L"szWCharInput=%s\n", szWCharInput);
+	wprintf(L"szWCharInput=%s\n", szWCharInput);*/
 
 
 
 
 	//입력 받은 문자열에서 'a'문자 갯수 출력
 
-	int D = wcslen(szWCharInput);
+	/*int D = wcslen(szWCharInput);
 	int DSum = 0;
 	for (int i = 0; i < D; ++i)
 	{
@@ -84,6 +87,6 @@ int main()
 	
 	printf("문자 a,b 개수=%d\n", DSum);
 	printf("sizeof=%d Byte\n", (unsigned)sizeof(szWCharInput));
-	printf("_countof=%d 배열수\n", (unsigned)_countof(szWCharInput));
+	printf("_countof=%d 배열수\n", (unsigned)_countof(szWCharInput));*/
 
 }
