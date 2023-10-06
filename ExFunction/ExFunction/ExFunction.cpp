@@ -63,20 +63,24 @@ class CShop
 public:
 	int m_value = 0;
 
-	CShop() :m_value(0)
+	void printValue()
 	{
-
-	}
-	~CShop()
-	{
-
-	}
-
-	void printValue(int x)
-	{
-		m_value=x;
 		printf("Value=%d", m_value);
 	}
+
+};
+
+class CPhoneShop:public CShop
+{
+	int m_PhoneCnt;
+	int m_PhonePrice;
+
+	CPhoneShop(int PhoneCnt, int PhonePrice):m_PhoneCnt(PhoneCnt), m_PhonePrice(PhonePrice)
+	{
+		
+	}
+
+	
 
 };
 
@@ -148,7 +152,7 @@ int main()
 
 
 	CShop shop;
-	shop.printValue(10);
+	shop.printValue();
 
 
 }
