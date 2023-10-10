@@ -1,6 +1,9 @@
 ﻿  Calculator.cpp
-D:\works\gangwon_chuncheon\Calculator\Calculator\Calculator.cpp(41,23): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\works\gangwon_chuncheon\Calculator\Calculator\Calculator.cpp(42,12): warning C4244: 'return': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\works\gangwon_chuncheon\Calculator\Calculator\Calculator.cpp(48,37): warning C4552: '/': 식의 결과가 사용되지 않습니다.
-D:\works\gangwon_chuncheon\Calculator\Calculator\Calculator.cpp(49,12): warning C4244: 'return': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\works\gangwon_chuncheon\Calculator\Calculator\Calculator.cpp(40,10): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\works\gangwon_chuncheon\Calculator\Calculator\Calculator.cpp(41,12): warning C4244: 'return': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\works\gangwon_chuncheon\Calculator\Calculator\Calculator.cpp(46,10): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\works\gangwon_chuncheon\Calculator\Calculator\Calculator.cpp(47,12): warning C4244: 'return': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\works\gangwon_chuncheon\Calculator\Calculator\Calculator.cpp(139,58): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\works\gangwon_chuncheon\Calculator\Calculator\Calculator.cpp(139,32): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\works\gangwon_chuncheon\Calculator\Calculator\Calculator.cpp(139,31): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Calculator.vcxproj -> D:\works\gangwon_chuncheon\Calculator\x64\Debug\Calculator.exe

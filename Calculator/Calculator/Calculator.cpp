@@ -37,15 +37,13 @@
 
 float standardWeight(float height)
 {
-    int A=0;
-    A= (height - 100) * 0.9;
+    int A=(height - 100) * 0.9;
     return A;
 }
 
 float GetBMI(float weight, float standardWeight)
 {
-    int B=0;
-    (weight - standardWeight) * 100 / standardWeight;
+    int B= (weight - standardWeight) * 100 / standardWeight;
     return B;
 }
 
@@ -59,49 +57,45 @@ void FailNumber()
 int main()
 {
    
-    bool NumInput = true;
+    //bool NumInput = true;
 
-    while (NumInput)
-    {
-        int Num1;
-        int Num2;
-        int Num3;
-        int Num4;
+    //while (NumInput)
+    //{
+    //    int Num1;
+    //    int Num2;
+    //    int Num3;
+    //    int Num4;
 
-        printf("[주민번호 출력 시스템]\n");
-        printf("주민번호 뒤 첫째자리까지 입력해주세요.(예시 '-'제외, OOOOOO O******)\n");
-        scanf_s("%02d%02d%02d%01d", &Num1, &Num2, &Num3, &Num4);
-        //printf("%d%d%d-%d******\n", Num1, Num2, Num3, Num4);
+    //    printf("[주민번호 출력 시스템]\n");
+    //    printf("주민번호 뒤 첫째자리까지 입력해주세요.(예시 '-'제외, OOOOOO O******)\n");
+    //    scanf_s("%02d%02d%02d%01d", &Num1, &Num2, &Num3, &Num4);
+    //    //printf("%d%d%d-%d******\n", Num1, Num2, Num3, Num4);
 
-        if (Num2 > 12)
-        {
-            FailNumber();
-        }
-        else if (Num3 > 31)
-        {
-            FailNumber();
-        }
-        else if (Num4 > 4)
-        {
-            FailNumber();
-        }
+    //    if (Num2 > 12)
+    //    {
+    //        FailNumber();
+    //    }
+    //    else if (Num3 > 31)
+    //    {
+    //        FailNumber();
+    //    }
+    //    else if (Num4 > 4)
+    //    {
+    //        FailNumber();
+    //    }
 
-        else
-        {
-            if (Num4 == 1 || Num4 == 3)
-            {
-                printf("%d년 %d월 %d일 남자\n\n", Num1, Num2, Num3);
-            }
-            else if (Num4 == 2 || Num4 == 4)
-            {
-                printf("%d년 %d월 %d일 여자\n\n", Num1, Num2, Num3);
-            }
-        }
-    }
-
-
-
-
+    //    else
+    //    {
+    //        if (Num4 == 1 || Num4 == 3)
+    //        {
+    //            printf("%d년 %d월 %d일 남자\n\n", Num1, Num2, Num3);
+    //        }
+    //        else if (Num4 == 2 || Num4 == 4)
+    //        {
+    //            printf("%d년 %d월 %d일 여자\n\n", Num1, Num2, Num3);
+    //        }
+    //    }
+    //}
 
 
 
@@ -112,64 +106,10 @@ int main()
    scanf_s("%06d%07d", &Bnum1, &Bnum2);
    printf("%06d-%07d\n", Bnum1, Bnum2);*/
    
-   bool Input = true;
-
-   //while (Input)
-   // {
-   //    printf("주민번호를 입력해주세요.\n");
-   //    int number[13]; // 입력 받을 8개 숫자 배열
-
-   //    for (int i = 0; i < 13; i++)
-   //    {
-   //        scanf_s("%1d", &number[i]);
-   //    }
+   
 
 
-   //    if (number[2] > 1)
-   //     {
-   //         printf("잘못입력하셨습니다.\n");
-   //         return;
-   //     }
-   //     else if (number[3] > 2)
-   //     {
-   //         printf("잘못입력하셨습니다.\n");
-   //         return;
-   //     else if (number[4] > 3)
-   //     {
-   //         printf("잘못입력하셨습니다.\n");
-   //         return;
-   //     else if (number[5] > 4)
-   //     {
-   //         printf("잘못입력하셨습니다.\n");
-   //         return;
-   //     }
-   //     else
-   //         continue;
-
-   //     int d = 0;
-   //     int Num = 0;
-   //     printf("주민번호 뒤 첫째자리를 입력해주세요.\n");
-   //     scanf_s("%d\n", &d);
-
-   //     if (number[7] == 1, 3)
-   //     {
-   //         printf("생년월일 = %d%d년 %d%d월 %d%d일 남자\n", number[0],number[1], number, c);
-   //         return;
-   //     }
-   //     else if (number[7] == 2, 4)
-   //     {
-   //         printf("생년월일 = %d년 %d월 %d일 여자\n", a, b, c);
-   //         return;
-   //     }
-   //     else
-   //         printf("잘못입력하셨습니다.\n");
-   //     return;
-   //     }
-
-   // }
-
-
-    /*bool BMIinput = true;
+    bool BMIinput = true;
 
     while (BMIinput)
     {
@@ -182,37 +122,39 @@ int main()
         switch (Button)
         {
         case 0:
+        {
             BMIinput = false;
             break;
+        }
         case 1:
+        {
             int BMIheight = 0;
             int BMIweight = 0;
+            int BMIResult = 0;
 
-            printf("몸무게를 입력해주세요\n");
-            scanf_s("%d", &BMIheight);
-            standardWeight(BMIheight);
             printf("키를 입력해주세요\n");
+            scanf_s("%d", &BMIheight);
+            printf("몸무게를 입력해주세요\n");
             scanf_s("%d", &BMIweight);
-            int BMIResult = GetBMI(BMIweight, standardWeight(BMIheight));
+            BMIResult = GetBMI(BMIweight, standardWeight(BMIheight));
 
             if (BMIResult <= 10)
             {
                 printf("정상\n");
             }
-            else if (10 < BMIResult <= 20)
+            else if (BMIResult > 10 && BMIResult <= 20)
             {
                 printf("과체중\n");
             }
-            else if (20 < BMIResult)
+            else if (BMIResult > 20)
             {
                 printf("비만\n");
             }
         }
+        }
+                        
 
-
-        
-
-    }*/
+    }
 
 
 
