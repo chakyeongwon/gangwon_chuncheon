@@ -10,12 +10,12 @@ using namespace std;
 
 struct stTest
 {
-	string m_name = "";
-	int m_math = 0;
-	int m_eng = 0;
-	int m_lang = 0;
+	string m_name;
+	int m_math;
+	int m_eng;
+	int m_lang;
 
-	stTest(string name, int math, int eng, int lang) :
+	stTest(string name="", int math=0, int eng=0, int lang=0) :
 		m_name(name), m_math(math), m_eng(eng), m_lang(lang)
 	{
 
@@ -26,23 +26,41 @@ struct stTest
 		printf("name=%s. math=%d, eng=%d, lang=%d\n", m_name.c_str(), m_math, m_eng, m_lang);
 	}
 
-};
-
-void pushStTest(vector<stTest>vecTest, string& str)
-{
-	stringstream ssTest(str);
-	string line;
-
-	while (getline(ssTest, line, ','))//,를 기준으로 앞에가 출력됨
+	void SetData(string& str)
 	{
-		line.erase(remove(line.begin(), line.end(), ' '), line.end());
-		printf("[%s]\n", line.c_str());
+		stringstream ssTest(str);
+		string line;
+
+		while (getline(ssTest, line, ','))//,를 기준으로 앞에가 출력됨
+		{
+			line.erase(remove(line.begin(), line.end(), ' '), line.end());
+
+			int index = line.find('=');
+			string leftStr = line.substr(0, index);
+			string rightStr = line.substr(index + 1, line.length() - index + 1);
+						
+			if (leftStr == "name")
+			{
+				m_name = rightStr;
+			}
+			else if (leftStr == "math")
+			{
+				m_math = stoi(rightStr);
+			}
+			else if (leftStr == "eng")
+			{
+				m_eng = stoi(rightStr);
+			}
+			else if (leftStr == "lang")
+			{
+				m_lang = stoi(rightStr);
+			}
+		}
 
 	}
 
-	
+};
 
-}
 
 
 int main()
@@ -112,29 +130,10 @@ int main()
 			std::string  str;
 			std::getline(readFile, str);//readFile의 텍스트를 한 줄 읽어서 str에 넣는다.
 			//printf("str=%s\n", str.c_str());
-			
-			pushStTest(vecTest,str);
-						
-			int center = str.find('=')+1;
-			string Name = str.substr(center, str.length() - center);
-
-			if (Name == "aaa")
-			{
-				
-			}
-			else if (Name == "math")
-			{
-
-			}
-			else if (Name == "eng")
-			{
-
-			}
-			else if (Name == "lang")
-			{
-
-			}
-
+								
+			stTest newData;
+			newData.SetData(str);
+			vecTest.push_back(newData);
 
 		}
 		readFile.close();
